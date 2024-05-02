@@ -13,5 +13,5 @@ export default defineConfig({
       'helpers': path.resolve(__dirname, 'src/helpers'),
     },
   },
-  base: "https://<USERNAME>.github.io/portfolio-mk4/"
+  base: "https://dariuszsikorra.github.io/portfolio-mk4/"
 })
