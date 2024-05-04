@@ -13,5 +13,5 @@ export default defineConfig({
       'helpers': path.resolve(__dirname, 'src/helpers'),
     },
   },
-  base: "https://dsikorra.net"
+  base: "https://www.dsikorra.net/"
 })
