@@ -39,8 +39,8 @@ const Home: React.FC = () => {
                 Dariusz Sikorra
               </Typography>
               <br />
-              <Typography component="h2" variant="h4" align="center">
-                Fullstack Engineer
+              <Typography component="h2" variant="h4" align="center" lineHeight={"3rem"}>
+                Senior JavaScript Engineer
               </Typography>
             </Grid>
           </TitleContainer>

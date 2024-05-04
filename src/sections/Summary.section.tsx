@@ -16,7 +16,7 @@ const StyledTitlePaper = styled(TitleContainer)`
 const Summary: React.FC = () => {
   return (
     <SectionWrapper>
-      <Title text="Summary" />
+      <Title text="About me" />
       <StyledSection>
         <StyledTitlePaper
           variant="outlined"

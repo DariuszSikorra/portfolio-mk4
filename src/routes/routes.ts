@@ -1,6 +1,6 @@
 enum ROUTES {
   home = "home",
-  summary = "summary",
+  summary = "about me",
   experience = "experience",
   technologies = "technologies",
   projects = "projects",
