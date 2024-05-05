@@ -47,9 +47,9 @@ function App() {
       <Element name={ROUTES.technologies}>
         <Technologies />
       </Element>
-      <Element name={ROUTES.projects}>
+      {/* <Element name={ROUTES.projects}>
         <Projects />
-      </Element>
+      </Element> */}
       <Element name={ROUTES.contact}>
         <Contact />
       </Element>

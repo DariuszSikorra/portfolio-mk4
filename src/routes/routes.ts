@@ -3,7 +3,7 @@ enum ROUTES {
   summary = "about me",
   experience = "experience",
   technologies = "technologies",
-  projects = "projects",
+  // projects = "projects",
   contact = "contact",
 }
 

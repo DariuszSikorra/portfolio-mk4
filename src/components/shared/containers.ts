@@ -1,5 +1,4 @@
-import theme from "@/theme";
-import { Grid, Paper, styled } from "@mui/material";
+import { Card, Grid, styled } from "@mui/material";
 
 export const SectionContainer = styled(Grid)`
   display: flex;
@@ -9,9 +8,7 @@ export const SectionContainer = styled(Grid)`
   flex-wrap: wrap;
 `;
 
-export const TitleContainer = styled(Paper)`
-  background-color: ${theme.palette.background.paper};
-  color: white;
+export const TitleContainer = styled(Card)`
   justify-content: center;
   height: 100%;
   display: flex;

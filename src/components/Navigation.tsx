@@ -24,7 +24,7 @@ const Navigation: React.FC = () => {
       <CustomLink route={ROUTES.summary} />
       <CustomLink route={ROUTES.experience} />
       <CustomLink route={ROUTES.technologies} />
-      <CustomLink route={ROUTES.projects} />
+      {/* <CustomLink route={ROUTES.projects} /> */}
       <CustomLink route={ROUTES.contact} />
     </StyledNavigation>
   );
