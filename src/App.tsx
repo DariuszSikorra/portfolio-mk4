@@ -7,7 +7,6 @@ import {
   Summary,
   Experience,
   Technologies,
-  Projects,
   Contact,
 } from "./sections";
 import styled from "@emotion/styled";
