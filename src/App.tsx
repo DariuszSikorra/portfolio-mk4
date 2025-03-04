@@ -2,19 +2,13 @@ import { Element } from "react-scroll";
 // import LoginForm from "./components/LoginForm";
 import Navigation from "./components/Navigation";
 import ROUTES from "./routes/routes";
-import {
-  Home,
-  Summary,
-  Experience,
-  Technologies,
-  Contact,
-} from "./sections";
+import { Home, Summary, Experience, Technologies, Contact } from "./sections";
 import styled from "@emotion/styled";
 import theme from "@/theme";
 
 const StyledBackground = styled.div`
   position: fixed;
-  z-index: -1;  
+  z-index: -1;
   width: 100vw;
   height: 100vh;
   background-color: ${theme.palette.background.default};
@@ -22,12 +16,13 @@ const StyledBackground = styled.div`
   bottom: 0;
   left: 0;
   right: 0;
-`
+`;
 
 const AppWrapper = styled.div`
   max-width: ${theme.breakpoints.values.md}px;
   margin: auto;
-`
+  font-family: ${theme.typography.fontFamily};
+`;
 
 function App() {
   return (

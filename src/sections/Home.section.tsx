@@ -36,11 +36,16 @@ const Home: React.FC = () => {
           <TitleContainer variant="outlined">
             <Grid component="div">
               <Typography component="h1" variant="h3" align="center">
-                Dariusz Sikorra
+                DARIUSZ SIKORRA
               </Typography>
               <br />
-              <Typography component="h2" variant="h4" align="center" lineHeight={"3rem"}>
-                Senior JavaScript Engineer
+              <Typography
+                component="h2"
+                variant="h4"
+                align="center"
+                lineHeight={"3rem"}
+              >
+                SENIOR FULL-STACK ENGINEER
               </Typography>
             </Grid>
           </TitleContainer>
