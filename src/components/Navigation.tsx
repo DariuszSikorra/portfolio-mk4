@@ -3,14 +3,8 @@ import { Fab, Tooltip } from "@mui/material";
 import { capitalizeFirstLetter } from "helpers/stringModifiers";
 import { StyledLink, StyledNavigation } from "./Navigation.styled";
 
-
-
 const CustomLink = ({ route }: { route: string }) => (
-  <StyledLink
-    to={route}
-    smooth={true}
-    duration={500}
-  >
+  <StyledLink to={route} smooth={true} duration={500}>
     <Tooltip title={capitalizeFirstLetter(route)} placement="left">
       <Fab color="primary" aria-label="add" size="small" />
     </Tooltip>

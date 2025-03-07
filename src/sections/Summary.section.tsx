@@ -5,7 +5,7 @@ import SectionWrapper from "components/shared/SectionContainer";
 import React from "react";
 
 const StyledSection = styled(SectionContainer)`
-  padding-top: 25%;
+  padding-top: 20%;
 `;
 
 const StyledTitlePaper = styled(TitleContainer)`
@@ -16,21 +16,40 @@ const StyledTitlePaper = styled(TitleContainer)`
 const Summary: React.FC = () => {
   return (
     <SectionWrapper>
-      <Title text="About me" />
+      <Title text="About Me" />
       <StyledSection>
         <StyledTitlePaper variant="outlined">
           <CardContent>
             <Typography component="h6" variant="h6" align="center">
-              Hello! I’m a JavaScript Engineer with 5 years of work experience.
+              <strong>Full-Stack Engineer</strong> specializing in{" "}
+              <strong>React, Next.js, and Node.js</strong>, with{" "}
+              <strong>5+ years of experience</strong> in building scalable,
+              high-performance web applications.
+              <br />
+              <br />I have a strong background in both{" "}
+              <strong>Frontend and Backend development</strong>, crafting
+              seamless user experiences and optimizing system performance. My
+              expertise extends to{" "}
+              <strong>
+                microservices architecture, DevOps, and API development
+              </strong>
+              , ensuring robust and efficient solutions.
               <br />
               <br />
-              I work primarily in a Frontend (React, Typescript, Next.js)
-              environment but occasionally use Node.js to handle Backend tasks.
+              Passionate about{" "}
+              <strong>
+                clean code, system design, and technical leadership
+              </strong>
+              , I thrive in <strong>Agile environments</strong>, collaborating
+              with cross-functional teams to drive product innovation. I enjoy
+              mentoring developers, refining development workflows, and
+              continuously evolving as an engineer.
               <br />
               <br />
-              Usually, I work on projects in a Scrum/Kanban system with the
-              Clients and occasionally I fulfil myself as a mentor or a
-              recruiter.
+              Whether it's architecting scalable solutions, optimizing complex
+              systems, or integrating cutting-edge technologies, I am dedicated
+              to delivering <strong>high-quality, user-centric software</strong>
+              .
             </Typography>
           </CardContent>
         </StyledTitlePaper>

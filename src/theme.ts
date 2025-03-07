@@ -4,21 +4,16 @@ const theme = createTheme({
   palette: {
     background: {
       default: "#494953",
-      paper: "rgb(140, 140, 140)",
+      paper: "rgba(240, 240, 240, 0.95)",
     },
   },
   typography: {
     fontFamily: [
-      "-apple-system",
-      "BlinkMacSystemFont",
-      '"Segoe UI"',
+      '"Source Sans 3"',
       "Roboto",
       '"Helvetica Neue"',
       "Arial",
       "sans-serif",
-      '"Apple Color Emoji"',
-      '"Segoe UI Emoji"',
-      '"Segoe UI Symbol"',
     ].join(","),
   },
 });

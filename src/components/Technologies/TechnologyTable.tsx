@@ -5,7 +5,8 @@ import {
   TableHead,
   TableRow,
   Paper,
-  styled,
+  TableContainer,
+  Typography,
 } from "@mui/material";
 
 const technologyData = [
@@ -13,8 +14,8 @@ const technologyData = [
     category: "Frontend",
     technologies: [
       "React",
-      "Next.js/React",
-      "Typescript",
+      "Next.js",
+      "TypeScript",
       "Tailwind/MUI",
       "jQuery",
       "Vite",
@@ -30,64 +31,66 @@ const technologyData = [
   },
   {
     category: "DevOps",
-    technologies: ["Docker", "Datadog", "Swagger", "Puppeteer", "Webpack"],
+    technologies: [
+      "Docker",
+      "Kubernetes",
+      "Azure",
+      "AWS",
+      "Datadog",
+      "Swagger",
+      "Puppeteer",
+      "Webpack",
+    ],
   },
   {
     category: "APIs & Middleware",
-    technologies: ["REST", "GraphQL(Apollo)", "Socket.io", "Websockets"],
+    technologies: ["REST", "GraphQL (Apollo)", "Socket.io", "WebSockets"],
+  },
+  { category: "Authentication", technologies: ["Keycloak", "RocketChat"] },
+  { category: "State Management", technologies: ["Redux Toolkit", "Zustand"] },
+  { category: "Testing & CI", technologies: ["Jest", "Cypress", "GitHub CI"] },
+  {
+    category: "Design & Collaboration",
+    technologies: ["Figma", "Scrum (Agile)"],
   },
   {
-    category: "Authentication & Communication",
-    technologies: ["Keycloak", "Rocketchat"],
-  },
-  {
-    category: "State Management",
-    technologies: ["Redux (Redux Toolkit)", "Zustand"],
-  },
-  {
-    category: "Testing & CI",
-    technologies: ["Jest", "Cypress (from Webdriver.io)", "GitHub CI"],
-  },
-  { category: "Design & Prototyping", technologies: ["Figma"] },
-  {
-    category: "Project Management & Collaboration",
-    technologies: ["Scrum (Agile)"],
-  },
-  {
-    category: "Miscellaneous",
+    category: "Other",
     technologies: [
       "Microservices",
       "Web components",
       "External hosting solutions",
-      "and many other external services",
     ],
   },
 ];
 
-const StyledTableContainer = styled(Paper)`
-  width: 80%;
-`;
-
 const TechnologyTable = () => {
   return (
-    <StyledTableContainer>
-      <Table>
+    <TableContainer
+      component={Paper}
+      sx={{ maxWidth: 800, margin: "auto", mt: 4, borderRadius: 2 }}
+    >
+      <Typography variant="h6" align="center" sx={{ mt: 2, mb: 1 }}>
+        Technologies I Work With
+      </Typography>
+      <Table size="small">
         <TableHead>
-          <TableRow>
-            <TableCell>Type of Technology</TableCell>
-            <TableCell>Technologies</TableCell>
+          <TableRow sx={{ backgroundColor: "#f5f5f5" }}>
+            <TableCell sx={{ fontWeight: "bold" }}>Category</TableCell>
+            <TableCell sx={{ fontWeight: "bold" }}>Technologies</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {technologyData.map((category, index) => (
             <TableRow key={index}>
-              <TableCell>{category.category}</TableCell>
+              <TableCell sx={{ fontWeight: "bold", whiteSpace: "nowrap" }}>
+                {category.category}
+              </TableCell>
               <TableCell>{category.technologies.join(", ")}</TableCell>
             </TableRow>
           ))}
         </TableBody>
       </Table>
-    </StyledTableContainer>
+    </TableContainer>
   );
 };
 
